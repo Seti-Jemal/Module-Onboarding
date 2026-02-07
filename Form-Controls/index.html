@@ -2,49 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>Order Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Simple order form for selecting name, email, color, and size." />
   </head>
+
   <body>
-    <Form action="results.html" method="GET">
+<main>
+      <h1>Order Form</h1>
+    <form action="results.html" method="GET" autocomplete="on">
         <div>
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" required>
+        <input type="text" name="name" id="name" minlength="2" required autocomplete="name">
         </div>
-        <div>
-        <label for="email">Email</label>
-       <input type="email" name="email"  required>
-        </div>
-        <div>
-            <p> Please select a color:</p>
-            <input type="radio" id="black"  name="color" value="Black" required>
-            <label for ="black">Black</label>
 
-            <input type="radio" id="grey"  name="color" value="Grey">
-            <label for ="grey">Grey</label>
-            
-            <input type="radio" id="red" name="color" value="Red">
-            <label for ="red">Red</label>
+        <div>
+          <br>
+        <label for="email">Email</label>
+       <input type="email" name="email" id="email" required autocomplete="email">
         </div>
-        <button type="submit">Submit</button>
-    </Form>
-      <h1> </h1>
-    </header>
-    <main>
-      
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-      
+
+      <br>
+          <fieldset>
+            <legend>Please select a color:</legend>
+              <div>
+            <input type="radio" id="black"  name="color" value="Black" required autocomplete="off">
+            <label for ="black"> Black</label>
+              </div>
+              <br>
+            <div>
+            <input type="radio" id="grey"  name="color" value="Grey">
+            <label for ="grey"> Grey</label>
+            <br>
+            </div>
+            <div>
+              <br>
+            <input type="radio" id="red" name="color" value="Red">
+            <label for ="red"> Red</label>
+            <br>
+            </div>
+            
+          </fieldset>
+        
+        
+          <fieldset>
+            <legend>Please select a size:</legend>
+            <label for="size">Size</label>
+            <select name="size" id="size" required>
+                <option value="">Select size</option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+                </select>
+              </fieldset>
+
+        
+        <button type="submit">Submit order</button>
+        
+    </form>
     </main>
+    
     <footer>
       
-      <h3>Seti Mussa</h3>
+      <p>Sjc</p>
     </footer>
   </body>
 </html>
-
+ 
