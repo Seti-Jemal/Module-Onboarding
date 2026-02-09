@@ -13,7 +13,7 @@
     <form action="results.html" method="GET" autocomplete="on">
         <div>
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" minlength="2" required autocomplete="name">
+        <input type="text" name="name" id="name" minlength="2" required pattern=".*/S*." title="Name must contain at least one non-space character" autocomplete="name">
         </div>
 
         <div>
