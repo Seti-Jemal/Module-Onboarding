@@ -1,74 +1,75 @@
-<!DOCTYPE h tml>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Order Form</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Simple order form for selecting name, email, color, and size.">
-  </head>
 
-  <body>
-<main>
-      <h1>Order Form</h1>
-    <form action="results.html" method="GET" autocomplete="on">
-        <div>
+<head>
+  <meta charset="utf-8">
+  <title>Order Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simple order form for selecting name, email, color, and size.">
+</head>
+
+<body>
+  <main>
+    <h1>Order Form</h1>
+    <form action="#" method="GET" autocomplete="on">
+      <div>
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" minlength="2" required pattern=".*/S*." title="Name must contain at least one non-space character" autocomplete="name">
-        </div>
+        <input type="text" name="name" id="name" minlength="2" required pattern=".*[^ ].*"
+          title="Name must contain at least one non-space character" autocomplete="name">
+      </div>
 
-        <div>
-          <br>
+      <div>
+        <br>
         <label for="email">Email</label>
-       <input type="email" name="email" id="email" required autocomplete="email">
-        </div>
+        <input type="email" name="email" id="email" required autocomplete="email">
+      </div>
 
       <br>
-          <fieldset>
-            <legend>Please select a color:</legend>
-              <div>
-            <input type="radio" id="black"  name="color" value="Black" required>
-            <label for ="black"> Black</label>
-              </div>
-              <br>
-            <div>
-            <input type="radio" id="grey"  name="color" value="Grey">
-            <label for ="grey"> Grey</label>
-            <br>
-            </div>
-            <div>
-              <br>
-            <input type="radio" id="red" name="color" value="Red">
-            <label for ="red"> Red</label>
-            <br>
-            </div>
-            
-          </fieldset>
-        
-        
-          <fieldset>
-            <legend>Please select a size:</legend>
-            <label for="size">Size</label>
-            <select name="size" id="size" required>
-                <option value="">Select size</option>
-                <option value="xs">XS</option>
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-                <option value="xl">XL</option>
-                <option value="xxl">XXL</option>
-                </select>
-              </fieldset>
+      <fieldset>
+        <legend>Please select a color:</legend>
+        <div>
+          <input type="radio" id="black" name="color" value="Black" required>
+          <label for="black"> Black</label>
+        </div>
+        <br>
+        <div>
+          <input type="radio" id="grey" name="color" value="Grey">
+          <label for="grey"> Grey</label>
+          <br>
+        </div>
+        <div>
+          <br>
+          <input type="radio" id="red" name="color" value="Red">
+          <label for="red"> Red</label>
+          <br>
+        </div>
 
-        
-        <button type="submit">Submit order</button>
-        
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Please select a size:</legend>
+        <select name="size" id="size" required>
+          <option value="">Select size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </fieldset>
+
+
+      <button type="submit">Submit order</button>
+
     </form>
-    </main>
-    
-    <footer>
-      
-      <p>Seti</p>
-    </footer>
-  </body>
+  </main>
+
+  <footer>
+
+    <p>BY Seti Mussa</p>
+  </footer>
+</body>
+
 </html>
- 
