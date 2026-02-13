@@ -58,7 +58,7 @@ main {
   gap: var(--space);
 }
 
-main > *:first-child {
+main>*:first-child {
   grid-column: span 2;
 }
 
@@ -71,12 +71,10 @@ article {
   grid-template-columns: var(--space) 1fr var(--space);
 }
 
-article > * {
+article>* {
   grid-column: 2 / 3;
 }
 
-article > img {
+article>img {
   grid-column: span 3;
 }
-
- 
